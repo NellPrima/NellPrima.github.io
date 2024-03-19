@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #42303f;
+}
+
+.some {
+    color: #75c075;
+    font-family: Didot;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#potato_pic {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border: 5px solid #a6648c;
+    border-radius: 10px;
+}
+
+.para1 {
+    color: #dae6da;
+    font-family: futura;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    color: #75c075;
+    font-family: didot;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#potato_pic2 {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+    border: 5px solid #a6648c;
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #b0eab0;
+    font-family: futura;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.space {
+    padding-bottom: 4rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #75c075;
+    font-family: futura;
+    font-size: .9rem;
+    color: #222d22;
+}
