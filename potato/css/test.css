@@ -62,10 +62,56 @@ figcaption {
     padding-top: .5rem;
 }
 
-.space {
-    margin-bottom: 4rem;
+/************Grid Gallery****************/
+
+.center_this {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+   
 }
 
+.gallery_grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns:200px 400px ;
+    grid-template-areas: 
+    "tato5 tato1 tato1 tato1"
+    "tato5 tato3 tato3 tato6";
+  
+
+}
+
+
+
+.gallery_grid img {
+    width:100%;
+}
+
+#tato1 {
+    grid-area: tato1;
+}
+#tato2 {
+    grid-area: tato2;
+}
+#tato3 {
+    grid-area: tato3;
+}
+#tato4 {
+    grid-area: tato4;
+}
+#tato5 {
+    grid-area: tato5;
+}
+#tato6 {
+    grid-area: tato6;
+}
+/*.space {
+    margin-bottom: 4rem;
+}
+*/
 footer {
     text-align: center;
     background-color: #75c075;
