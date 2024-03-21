@@ -64,23 +64,14 @@ figcaption {
 
 /************Grid Gallery****************/
 
-.center_this {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-   
-}
+
 
 .gallery_grid {
+    
     display: grid;
     gap: 15px;
     grid-template-columns:200px 400px ;
-    grid-template-areas: 
-    "tato5 tato1 tato1 tato1"
-    "tato5 tato3 tato3 tato6";
-  
+   
 
 }
 
@@ -112,6 +103,8 @@ figcaption {
     margin-bottom: 4rem;
 }
 */
+
+/************End Gallery Grid************/
 footer {
     text-align: center;
     background-color: #75c075;
