@@ -70,7 +70,7 @@ figcaption {
     
     display: grid;
     gap: 15px;
-    grid-template-columns:200px 400px ;
+    grid-template-columns:200px 300px ;
    
 
 }
