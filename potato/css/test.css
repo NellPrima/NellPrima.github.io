@@ -62,47 +62,16 @@ figcaption {
     padding-top: .5rem;
 }
 
+
+
 /************Grid Gallery****************/
-
-
-
-.gallery_grid {
-    
-    display: grid;
-    gap: 15px;
-    grid-template-columns:200px 300px ;
-   
-
-}
-
-
-
 .gallery_grid img {
-    width:100%;
+    width:50%;
+
 }
 
-#tato1 {
-    grid-area: tato1;
-}
-#tato2 {
-    grid-area: tato2;
-}
-#tato3 {
-    grid-area: tato3;
-}
-#tato4 {
-    grid-area: tato4;
-}
-#tato5 {
-    grid-area: tato5;
-}
-#tato6 {
-    grid-area: tato6;
-}
-/*.space {
-    margin-bottom: 4rem;
-}
-*/
+
+
 
 /************End Gallery Grid************/
 footer {
