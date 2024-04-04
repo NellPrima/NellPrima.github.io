@@ -67,6 +67,8 @@ figcaption {
 /************Grid Gallery****************/
 .gallery_grid img {
     width:100%;
+    height: 100%;
+    object-fit: cover;
 
 }
 
@@ -75,16 +77,56 @@ figcaption {
     align-items: center;
     justify-content: center;
     border: 3px solid red;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery_grid {
     display: grid;
     gap:10px;
-    grid-template-columns: 400px 250px 350px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-    "tato4 tato1 "
-    "tato5 tato1"  ;
+    "tato2 tato2"
+    "tato2 tato2" ;
 }
+
+#tato2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#tato1 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#tato3 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#tato6 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#tato6 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
 
 
 
