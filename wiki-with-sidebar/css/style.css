@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.two_columns {
+    display: flex;
+}
+
+.title_1 {
+    margin: 2rem;
+}

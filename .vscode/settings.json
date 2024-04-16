@@ -1,0 +1,10 @@
+{
+    "editor.rulers": [
+    80
+
+    ],
+    "editor.autoClosingBrackets": "always"
+    "workbench.colorCustomizations":{
+        "editorRuler.foreground": "#459347"
+    }
+}
