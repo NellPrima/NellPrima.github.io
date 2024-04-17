@@ -3,75 +3,51 @@
 }
 body {
     margin: 0px;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
-.two-columns-1 {
-    display: flex;      
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 450px 250px 1fr;
+    grid-template-areas: 
+    " content sidebar"
 }
 
 #sidebar {
-    background-color: #fcd4da;
-    width: 300px;
-    padding: 24px;
-    border-right: 5px solid #80007c;
-
+    grid-area: sidebar;
+    padding: 10px;
 }
 #sidebar h2 {
-    border-bottom: 2px solid #80007c;
-    padding-bottom: 8px;
+    background-color: blue;
+    margin: 0px;
+    padding: 12px;
+    color: white;
+    font-size: 10px;
 }
+
 #sidebar ul {
-    list-style: none;
-    padding: 0px;
-    text-align: center;
+    background-color: antiquewhite;
+    border: 1px solid green;
+    margin: 0px 0px 36px;
+    list-style-type: none;
+    padding: 0px 12px;
 }
-#sidebar ul a {
-    color: #111;
+
+#sidebar a {
+    color: green;
     text-decoration: none;
 }
-#sidebar ul li {
-    padding: 4px 0px;
+
+#sidebar li {
+    border-bottom: 1px solid lightgreen;
+    padding: 8px 8px;
 }
 
-#sidebar p {
-    text-align: center;
-    font-size: small;
-    font-style: italic;
-}
-#main-content {
-    padding: 48px;
-    flex: 1;
-    
-}
-#sidebar-1 {
-    background-color: #fcd4da;
-    width: 300px;
-    padding: 24px;
-    border-left: 5px solid #80007c;
-    order: 2;
-}
-h2 {
-    text-align: center;
-    font-style: italic;
-    color: #80007c;
+#sidebar li:last-child {
+    border-bottom: 0px;
 }
 
-hr {
-    height: 1px;
-    background-color: #80007c;
-    border: none;
-     /*how can i targe the hr element to change the color?*/  
-}
-
-h1 {
-    text-align: center;
-    font-style: italic;
-    color: #80007c;
-}
-
-.test {
-    text-align: center;
-    font-style: italic;
-    font-size: small;
+#main {
+    background-color: lightcyan;
+    grid-area: content;
 }
