@@ -1,122 +1,112 @@
-* {
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+
+#license {
     box-sizing: border-box;
-   
-}
-
-body {
-    margin: 0px;
-    font-family: sans-serif;
-}
-
-#grid-layout {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-areas: 
-        "header header"
-        "sidebar main";
-}
-
-/*Start header code*/
-#header {
-    /*background-color: lightskyblue;*/
-    grid-area: header;
-    padding: 0px 36px;
-}
-
-#header a {
-    text-decoration: none;
-}
-
-/*Spans for logo*/
-
-#header #me {
-    color: #111111;
-}
-
-#header #tube {
-    background-color: red;
-    color: white;
-    padding: 4px;
-    border-radius: 12px;
-}
-
-/*End header code*/
-
-/*Start sidebar code*/
-
-#sidebar {
-    /*background-color: lightcyan;*/
-    grid-area: sidebar;
-    padding: 0 24px;
-}
-
-#sidebar ul a {
-    text-decoration: none;
-    color: #111111;
-    padding: 12px;
-    display: block;
-   
-}
-
-#sidebar ul {
-    padding:12px 0;
-    margin: 0;
-    list-style-type: none;
-    border-bottom: 1px solid #aaaaaa;
-
-}
-
-#sidebar ul a:hover {
-    background-color: #eeeeee;
+    width: 700px;
+    box-shadow: inset;
+    background: linear-gradient(to bottom right,#f5da7f,rgb(248, 168, 19));
     border-radius: 15px;
+    border-color: black;
+    border-style: solid;
 }
-/*End Sidebar code*/
-
-#main {
-    /* background-color: lightgoldenrodyellow; */
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
+#content {
+    vertical-align: top;
+    margin: 24px;
 }
-
-.metube-item {
-    flex: 250px;
-    margin-right: 12px;
-    margin-bottom: 24px;
+h1 {
+    color: #0e0ea0;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
 }
-
-.metube-item .thumbnail-placeholder {
-    aspect-ratio: 16 / 9;
-    background: radial-gradient(
-        at top left, 
-        crimson, 
-        orange
-    );
-    border-radius: 8px;
+h4 {
+    background-color: #0e0ea0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
 }
-
-.metube-item h4 {
-    margin: 8px;
+#left-side, #right-side {
+    display: inline-block;
+    font-size: 10px;
 }
-
-.metube-item h4 a {
-    text-decoration: none;
-    color:#111111;
-    display: block;
-
+#left-side {
+    width: 65%;
 }
-
-.metube-item h4 a:hover {
-    text-decoration: underline;
+#right-side {
+    width: 34%;
+}
+#id-and-expiration  div {
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    }
+#id-and-expiration div span {
+    color: red;    
 }
 
-.video-details {
-    margin: 8px;
+#address {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px;
+}
+#personal-info {
+    display: inline-block;
+    height: 48px;
+    width: auto;
+}
+#data-fields {
+    display: inline-block;
+    font-size: 12px;  
+    vertical-align: middle;
+}
+#data-left {
+    display: inline-block;
+    color: blue;
+}
+#data-left span {
+    color: red;
+}
+#data-right {
+    display: inline-block;
+    color: blue;
+}
+#data-right span {
+    color: red;
+}
+#small-pic {
+    float: left;
+    box-sizing: content-box;
+}
+#right-side {
+    width: 200px;
+    height: 250px;
+    align-items: right;
+    justify-content: right;
+}
+#donor {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+}
+#real-id {
+    display: inline-block;
+    color: white;
+}
+#signature {
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
     font-size: 14px;
 }
 
-.video-channel {
-    margin-bottom: 4px;
-
-}
-
+/* I couldn't figure out how to re-size the images alone to fit the "parent" box,
+and the vertical aling top for id and expiration also did not work. */
