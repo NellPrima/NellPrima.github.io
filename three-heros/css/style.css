@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: orbitron;
+}
+
+.hero_1 {
+    background-image: url(../images/doctordonna.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.hero_1 h1 {
+    font-size: 10vw;
+    padding-left: 10vw;
+    color: rgb(243, 197, 71);
+}
+
+button {
+    background-color: rgb(234, 55, 55);
+    height:4rem;
+    z-index: 2;
+    position: relative;
+    bottom: 30rem;
+    left: 90rem;
+    width: 4;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button p {
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(238, 108, 15);
+}
+
+.hero_2 {
+    background-image: url(../images/tardis.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.hero_3 {
+    background-image: url(../images/angel.gif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
