@@ -6,70 +6,52 @@ body {
     font-family: sans-serif;
 }
 
-.layout {
-    max-width: 1000px;
-    margin: 48px auto;
-    text-align: center;
-}
-
-#boots {
-    width: 50%;
-}
-
-/* #port-hero {
-    background-image: url(../images/PortraitPhotographyProjectFinal_GDWD103_MDancer.jpg);
-    background-size: cover;
-    position: relative;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
-
 #port-hero {
     background-image: url(../images/PortraitPhotographyProjectFinal_GDWD103_MDancer.jpg);
-    height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    
+} 
 
+/* .flex-hero {
+    display: flex;
+    justify-content: center;
+    padding: 30rem;
+    
 
+} */
 
-
-}
-
-.try {
-    display:flex;
-     
-}
-
+ #hero-hero {
+  padding:40rem;
+} 
 
 
 #port-hero h1 {
-    padding: 20px;
+    padding: 20px; 
     background-color: #ce0000c9;
     border: 4px solid #0300b3;
+    width: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
     background-color: whitesmoke;
-    padding: 15px;
+    padding: 15px; 
+    width: 8rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    
 }
 
-.dum-btns {
-
-}
-
-.horizontal-masonry-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-.horizontal-masonry-gallery img {
-    height: 250px;
-    flex: 1;
-    object-fit: cover;
-}
-
-.card a {
+.dum-btns a {
     color: black;
     text-decoration: none;
     font-size: 20px;
@@ -86,7 +68,28 @@ body {
         color .5s;
 }
 
-.card a:hover {
+.dum-btns a:hover {
     background-color: transparent;
     color: lightcoral;
+}
+
+.layout {
+    max-width: 1000px;
+    margin: 48px auto;
+    text-align: center;
+}
+
+.cropped-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px; 
+    /* ^ "For each auto-generated row, they should be this height" */
+    gap: 24px;
+    padding: 24px;
+    border: 10px solid #d8bfd8d7;
+}
+.cropped-grid-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
