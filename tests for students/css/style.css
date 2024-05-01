@@ -1,95 +1,55 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
 * {
     box-sizing: border-box;
 }
-body {
-    margin: 0px;
-    font-family: sans-serif;
+.card-style-3 {
+    width: 350px;
+    align-items: center;
+    justify-content: space-between;
+    border: 15px solid goldenrod;
+    margin: 15px;
+    padding: 20px;
+    background: yellow;
+    border-radius: 10px;
 }
-
-#port-hero {
-    background-image: url(../images/PortraitPhotographyProjectFinal_GDWD103_MDancer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    
-} 
-
-/* .flex-hero {
+#pokemon-card-1 {
+    background: linear-gradient(to bottom right, yellow, orange, purple);
+}
+.card-style-3 img {
+    width: 100% ;
+    border: 7px solid goldenrod;
+}
+.pokemon-header {
     display: flex;
-    justify-content: center;
-    padding: 30rem;
-    
-
-} */
-
- #hero-hero {
-  padding:40rem;
-} 
-
-
-#port-hero h1 {
-    padding: 20px; 
-    background-color: #ce0000c9;
-    border: 4px solid #0300b3;
-    width: 40rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
 }
-
-.hero-btn {
-    background-color: whitesmoke;
-    padding: 15px; 
-    width: 8rem;
+.details {
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-
-    
+    background: linear-gradient(to bottom right, yellow, orange, yellow);;
 }
-
-.dum-btns a {
-    color: black;
-    text-decoration: none;
+.decription {
+    margin: 30%;
+}
+.attack {
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.data{
+    text-align: center;
+}
+.power {
     font-size: 20px;
+    
+}
+.bold {
     font-weight: bold;
-    display: block;
-    width: 100%;
-    margin-top: 0px;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid lightcoral;
-    background-color: lightcoral;
-    transition:
-        background-color .5s
-        color .5s;
-}
-
-.dum-btns a:hover {
-    background-color: transparent;
-    color: lightcoral;
-}
-
-.layout {
-    max-width: 1000px;
-    margin: 48px auto;
-    text-align: center;
-}
-
-.cropped-grid-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 200px; 
-    /* ^ "For each auto-generated row, they should be this height" */
-    gap: 24px;
-    padding: 24px;
-    border: 10px solid #d8bfd8d7;
-}
-.cropped-grid-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
