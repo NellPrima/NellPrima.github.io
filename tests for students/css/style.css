@@ -1,55 +1,119 @@
-/*
-    Write your CSS for the assignment here.
-
-    You shouldn't need to modify the HTML;
-    however, you are allowed to. 
-    
-    Just be aware that you may break some
-    of the setup.css styling if you do so.
-*/
 * {
     box-sizing: border-box;
 }
-.card-style-3 {
-    width: 350px;
-    align-items: center;
-    justify-content: space-between;
-    border: 15px solid goldenrod;
-    margin: 15px;
-    padding: 20px;
-    background: yellow;
-    border-radius: 10px;
+body {
+    margin: 0px;
+    font-family: sans-serif;
 }
-#pokemon-card-1 {
-    background: linear-gradient(to bottom right, yellow, orange, purple);
-}
-.card-style-3 img {
-    width: 100% ;
-    border: 7px solid goldenrod;
-}
-.pokemon-header {
+
+/* client 1 */
+
+#client1, #navbar-1 {
+    background-color: #b7b7a4;
     display: flex;
     justify-content: space-between;
-}
-.details {
-    text-align: center;
-    background: linear-gradient(to bottom right, yellow, orange, yellow);;
-}
-.decription {
-    margin: 30%;
-}
-.attack {
-    border-bottom: 2px solid black;
-    display: flex;
     align-items: center;
 }
-.data{
+#navbar-1 h1 {
+    color: #b56449;
+    padding: 24px;
     text-align: center;
-}
-.power {
-    font-size: 20px;
-    
-}
-.bold {
     font-weight: bold;
+}
+#navbar-1 a {
+    text-decoration: none;
+    color: #b56449;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 50px; 
+}
+#links {
+    text-align: end;
+    margin-right: 24px;
+    padding: 12px;
+}
+#navbar-1 {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+
+/* client 2 */
+
+#client2, #navbar-2 {
+    background-color: #e8e492;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar-2 h1 {
+    color: #555330;
+    padding: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+#navbar-2 a {
+    text-decoration: none;
+    color: #555330;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 180px;
+   
+}
+#navbar-2 {
+    position: sticky;
+    top: 0px;
+}
+.cta-button {
+    background-color:  #bbb986;
+    border: solid 1px white;
+    border-radius: 28px;
+    margin-right: 15px;
+    padding: 12px;
+}
+
+/* client3 */
+#navbar-top {
+    background-color: orange;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 12px;
+    justify-content: center;
+    gap: 20px;
+}
+#navbar-top h1 {
+    /* margin-left: 24px; */
+    font-weight: bold;
+    font-size: 42px;
+}
+#navbar-top h2 {
+    /* margin-right: 12px; */
+    margin-top: 40px;
+}
+/* how can the content be justified middle to aligned it with h1? */
+#navbar-middle {
+    background-color: black;
+    padding: 24px;
+    text-align: center;
+}
+#navbar-middle h1 {
+    color: orange;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 50px;  
+}
+#navbar-middle a {
+    color: orange;
+    text-decoration: none;
+    padding: 0px 36px;
+}
+#bottom {
+    background-color: orange;
+    text-align: center;
+}
+#bottom a {
+    text-decoration: none;
+    padding: 24px;
+    color: black;
 }
