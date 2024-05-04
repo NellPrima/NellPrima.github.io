@@ -1,71 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible"content="IE=edge">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navbar Basic Demo</title>
+        <meta http equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-
-        <div id="header">
-            <div id="navbar">
-                <a href="#" id="logo">
-                    <img 
-                        src="images/first-logo-hdr.webp" 
-                        alt="First logo"
-                    >
-                    </a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#" class="cta-button">
-                        Sign up
-                    </a>
-            </div>
-            <div id="navbar-bottom">
-                <a href="#">Lower link 1</a>
-                <a href="#">Lower link 2</a>
-                <a href="#">Lower link 3</a>
-                <a href="#">Lower link 4</a>
-                <a href="#">Lower link 5</a>
-            </div>
-        </div>
+    
+    <div id="navbar">
+        <a id="logo" class="nohover" href="#">AdoptMePlz</a>
+       
+            <a href="#" id="logo"class="nohover">
+                <img src="images/logo.jpg" alt="logo">
+            </a>
         
 
-    
-   
-    <div id="layout">
-     
-        <h1> Lorem Ipsum Dolor</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
-            labore, esse dolore aperiam velit, iste numquam, nam temporibus 
-            omnis aut eos? Amet facilis vitae laboriosam tempora a ratione 
-            reprehenderit iste!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
-            labore, esse dolore aperiam velit, iste numquam, nam temporibus 
-            omnis aut eos? Amet facilis vitae laboriosam tempora a ratione 
-            reprehenderit iste!
-        </p><p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
-            labore, esse dolore aperiam velit, iste numquam, nam temporibus 
-            omnis aut eos? Amet facilis vitae laboriosam tempora a ratione 
-            reprehenderit iste!
-        </p><p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
-            labore, esse dolore aperiam velit, iste numquam, nam temporibus 
-            omnis aut eos? Amet facilis vitae laboriosam tempora a ratione 
-            reprehenderit iste!
-        </p><p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
-            labore, esse dolore aperiam velit, iste numquam, nam temporibus 
-            omnis aut eos? Amet facilis vitae laboriosam tempora a ratione 
-            reprehenderit iste!
-        </p>
-    </div> 
+        <div class="dropdown-container">
+            <a href="#">Adopt <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+                <a href="#">Will</a>
+                <a href="#">Daisy</a>
+                <a href="#">Chuck</a>
+            </div>
+        </div>
+
+        <div class="dropdown-container1">
+            <a href="#">Volunteer <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+                <a href="#">Storys Of Our Volunteer</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Our Mission</a>
+            </div>
+        </div>           
+                
+        <a href="#">Contact</a>
+
+        <div class="dropdown-container2">
+            <a href="#">Donate <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+                <a href="#">Locations</a>
+                <a href="#">what Donations Go To</a>
+                <a href="#">Pickup Donation Delivery Service</a>
+            </div>
+        </div>
+    </div>
+
+    <style> 
+        body {
+           background-image: url(images/grass.jpg);
+       }
+       </style>
+        <div class="column">
+            <div class="card" style="width: 40rem;">
+                <img src="images/adopt-pet1.jpg" class="card-img-top" alt="Will">
+                <div class="card-body">
+
+            <h5 class="card-title"> Will - #A0819320</h5>
+            <h6 class="card-intro">My name is WILL.</h6>
+                
+            <p class="card-text">
+                    
+                    
+                    I am a neuterd male, white and brown chihuahua. 
+                    The shelter staff think i am 7yrs old. 
+                    I have been in the shelter since:
+                      April 11,2024.
+                
+            </p>
+                     
+                <a herf="#" class="btn-btn-primary">AdoptMePlz</a>
+                
+            </div>
+        </div>
+    </div>
     </body>
 </html>

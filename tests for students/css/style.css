@@ -4,116 +4,134 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+#navbar {
+    background: linear-gradient(to bottom, rgb(171, 212, 20), #929415);
+    display: flex;
+    align-items: center;
+    
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
 }
 
-/* client 1 */
+#navbar #logo {
+    margin-right: auto;
+}
 
-#client1, #navbar-1 {
-    background-color: #b7b7a4;
+#navbar #logo img {
+    width: 150px;
+    border-radius: 50%;
+}
+#navbar {
+    background: linear-gradient(to bottom, #2fd26b, #18da18);
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-#navbar-1 h1 {
-    color: #b56449;
-    padding: 24px;
-    text-align: center;
-    font-weight: bold;
-}
-#navbar-1 a {
+#navbar a {
+    display: inline-block;
     text-decoration: none;
-    color: #b56449;
+    color: white;
+    padding: 24px;
+}
+#navbar a:hover {
+    background: linear-gradient(to top, rgb(112, 42, 42), rgb(74, 36, 36));
+}
+#navbar #logo {
+    margin-right: auto;
     font-weight: bold;
-    font-size: 18px;
-    margin-left: 50px; 
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
 }
-#links {
-    text-align: end;
-    margin-right: 24px;
-    padding: 12px;
+
+.dropdown-container {
+    position: relative;
 }
-#navbar-1 {
-    position: sticky;
-    top: 0px;
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.25s,
+        visibility 0.25s;
+        z-index: 10;
+}
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-menu a {
+    background-color: brown;
+    width: 100%;
+    min-width: 200px;
+}
+#navbar .dropdown-menu a:hover {
+    background: rgb(54, 176, 54);
+}
+.column {
+    float: center;
+    width: 50%;
+    padding: 0px 10px ;
+}
+.card {
+    display: grid;
+    grid-template-columns: none;
+    border: 1px solid rgb(111, 194, 111);
+    border-radius: 8px;
+    padding: 26px;
+    text-align: center;
+    background-color: #f1f1f1;
+    grid-gap: 20px;
+    margin: 10px;
+}
+.single-column {
+    height: 400px;
+    width: 50%; 
+    margin-left: 25%;
+    background-color: rgb(231, 240, 231);
+    color: black;
+}
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     width: 100%;
 }
-
-
-/* client 2 */
-
-#client2, #navbar-2 {
-    background-color: #e8e492;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card-intro {
+    color: #18da18;
 }
-#navbar-2 h1 {
-    color: #555330;
-    padding: 24px;
-    text-align: center;
-    font-weight: bold;
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #070707;
 }
-#navbar-2 a {
+.card-text {
+    font-size: 1rem;
+    color: #070707;
+}
+.btn-btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #18da18;
+    color: #fff;
     text-decoration: none;
-    color: #555330;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 180px;
-   
+    border-radius: 4px;
+    margin-top: 10px;
 }
-#navbar-2 {
-    position: sticky;
-    top: 0px;
+.card-button:hover {
+    background-color: #cee4ce;
 }
-.cta-button {
-    background-color:  #bbb986;
-    border: solid 1px white;
-    border-radius: 28px;
-    margin-right: 15px;
-    padding: 12px;
-}
-
-/* client3 */
-#navbar-top {
-    background-color: orange;
-    display: flex;
-    /* justify-content: space-between; */
-    padding: 12px;
-    justify-content: center;
-    gap: 20px;
-}
-#navbar-top h1 {
-    /* margin-left: 24px; */
-    font-weight: bold;
-    font-size: 42px;
-}
-#navbar-top h2 {
-    /* margin-right: 12px; */
-    margin-top: 40px;
-}
-/* how can the content be justified middle to aligned it with h1? */
-#navbar-middle {
-    background-color: black;
-    padding: 24px;
-    text-align: center;
-}
-#navbar-middle h1 {
-    color: orange;
-    margin-top: 0px;
-    text-align: center;
-    font-size: 50px;  
-}
-#navbar-middle a {
-    color: orange;
-    text-decoration: none;
-    padding: 0px 36px;
-}
-#bottom {
-    background-color: orange;
-    text-align: center;
-}
-#bottom a {
-    text-decoration: none;
-    padding: 24px;
-    color: black;
+.nohover {
+    pointer-events: none;
 }
