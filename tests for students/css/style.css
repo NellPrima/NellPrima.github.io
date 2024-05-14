@@ -4,18 +4,28 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    background-color: lightblue;
+    background-color: #f4e30a;
+   
 
 }
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+     margin: 0 auto; 
+    padding: 0 20px; 
+    color: #fff;
+    background-color: #f4e30a;
+}
+.hero {
+    background-image: url(../images/Mystic1.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 24px;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #27034f;
+    color: #f4e30a;
     padding: 10px 0;
 }
 
@@ -38,7 +48,7 @@ nav {
 }
 
 .navbar ul li {
-    margin-right: 15px;
+     margin-right: 15px;
 }
 
 .navbar ul li a {
@@ -54,7 +64,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #000;
     min-width: 150px;
     z-index: 1;
 }
@@ -70,18 +80,17 @@ nav {
     display: block;
 }
 
-main {
-    padding: 20px 0;
-}
+
 
 h1, h2 {
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #ae1818;
     color: #fff;
-    padding: 20px 0;
+   
+    text-align: center;
 }
 
 footer nav ul {
@@ -90,10 +99,11 @@ footer nav ul {
 }
 
 footer nav ul li {
-    margin: 0 10px;
+     margin: 0 10px; 
 }
 
-footer nav ul li a {
+.container nav ul li a {
+    display: inline-block;
     text-decoration: none;
     color: #fff;
 }
@@ -108,7 +118,7 @@ footer nav ul li a {
     background-color: #555;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     text-align: center;
 
 }
@@ -123,7 +133,7 @@ footer nav ul li a {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -133,3 +143,56 @@ footer nav ul li a {
 .cta-button:hover {
     background-color: #555;
 }
+
+.footerStyle {
+    text-align: center;
+    display:inline-flex;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.footerStyle a {
+    padding: 20px;
+    text-decoration: none;
+}
+.container2 {
+    background-color: #27034F;
+   
+}
+.container {
+    color: #F4E30A;
+}
+
+.footerstyle2 {
+    background-color: orange;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerstyle2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.container2  a {
+ 
+    text-decoration: none;
+    color: #fff;
+}
+
+/* new stuff */
+.footerstyle2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    height: 90px;
+    margin-top:20px;
+}
+
+footer{
+    position: relative;
+    top: 450px;
+}
+/* new stuff */
