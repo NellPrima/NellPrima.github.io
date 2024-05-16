@@ -37,16 +37,22 @@ h1 {
 
 /* Edit images here  */
 
-#shannon {
-    width: 50%;
+#shannon,
+#kimmy,
+#jacquline {
+    width: 450px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.pictureframe{
+/* .pictureframe{
     width: 750px;
     background-color: white;
     height: 40px;
-}
+} */
+
+
+
+
 
