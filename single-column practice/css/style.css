@@ -28,3 +28,21 @@ body {
     color:#ccb6e7;
     text-shadow:1px 1px#1a0f27;
 }
+
+@media screen and (max-width: 800px){
+    .light-container {
+        color:#ccb6e7;
+        background-color: #714e6d;
+        text-shadow:1px 1px#1a0f27;
+       
+    }
+    
+    .dark-container {
+        
+        padding: 48px 0;
+        
+        
+        background-color: #e4d3;
+    }
+
+}

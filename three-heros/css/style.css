@@ -24,19 +24,24 @@ body {
     font-size: 10vw;
     padding-left: 10vw;
     color: rgb(243, 197, 71);
+    text-shadow: 2px 2px black;
+    
 }
 
 button {
-    background-color: rgb(234, 55, 55);
-    height:4rem;
-    z-index: 2;
+    font-size: 1.8vw;
+    display: inline-block;
+    background-color: rgb(206, 93, 93);
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5vh 5vw 10vh 0px;
     position: relative;
-    bottom: 30rem;
-    left: 90rem;
-    width: 4;
+    top: 10rem;
+    right: 15rem;
+    border-radius: 10%;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
+   
 
 }
 
@@ -60,6 +65,35 @@ button:hover {
     position: relative;
 }
 
+.hero_2 h1 {
+    font-size: 8vw;
+    padding-left: 10vw;
+    color: rgba(74, 71, 243, 0.386);
+    text-shadow: 2px 2px rgb(58, 43, 125);
+    
+}
+
+button {
+    font-size: 1.8vw;
+    display: inline-block;
+    background-color: rgb(206, 93, 93);
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5vh 5vw 10vh 0px;
+    position: relative;
+    top: 10rem;
+    right: 15rem;
+    border-radius: 10%;
+    cursor: pointer;
+   
+
+}
+
+button p {
+    color: white;
+}
+
 .hero_3 {
     background-image: url(../images/angel.gif);
     height: 100vh;
@@ -70,4 +104,33 @@ button:hover {
     align-items: center;
     z-index: 1;
     position: relative;
+}
+
+.hero_3 h1 {
+    font-size: 8vw;
+    padding-left: 10vw;
+    color: rgba(74, 71, 243, 0.386);
+    text-shadow: 2px 2px rgb(58, 43, 125);
+    
+}
+
+button {
+    font-size: 1.8vw;
+    display: inline-block;
+    background-color: rgb(206, 93, 93);
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5vh 5vw 10vh 0px;
+    position: relative;
+    top: 10rem;
+    right: 15rem;
+    border-radius: 10%;
+    cursor: pointer;
+   
+
+}
+
+button p {
+    color: white;
 }
