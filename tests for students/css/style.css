@@ -1,198 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
 * {
     box-sizing: border-box;
-}
-body {
-    margin: 0px;
-    font-family: sans-serif;
-    background-color: #f4e30a;
-   
-
-}
-.container {
-    max-width: 1200px;
-     margin: 0 auto; 
-    padding: 0 20px; 
-    color: #fff;
-    background-color: #f4e30a;
-}
-.hero {
-    background-image: url(../images/Mystic1.jpg);
-    height: 50vh;
-    background-size: cover;
-    background-position: center center;
-    padding: 24px;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #27034f;
-    color: #f4e30a;
-    padding: 10px 0;
-}
+/* Grid start */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar ul li {
-     margin-right: 15px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 150px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-
-h1, h2 {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #ae1818;
-    color: #fff;
-   
-    text-align: center;
-}
-
-footer nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-footer nav ul li {
-     margin: 0 10px; 
-}
-
-.container nav ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-}
-.product-grid, .creator-grid {
+#four_boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-
+    grid-template-columns: 850px 1fr 1fr; 
+    grid-template-areas: "one  two"
+    " three four" ;
 }
 
-.product, .creator {
-    background-color: #555;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    text-align: center;
-
+/* my name and logo */
+#one {
+    background-color:#FBF4EF;
+    width: 30rem;
+    height: 25rem;
+    margin: 2rem;
+    grid-area: one;
+    border: 3px solid grey;
+    border-style: inset;
 }
 
-.product img, .creator img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.top_taskbar {
+   height: 1.8rem;
+   width: 29.8rem;
+   background-color: #977bd9;
+   border-bottom: 3px solid rgb(179, 175, 175);
+   border-style: inset;
+ 
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+
+
+#top_taskbar_mood {
+    display: flex;
+    gap: .2rem;
+    /* margin-bottom: 8rem;  */
+    width: 49.8rem;
+   
+    
+} 
+
+
+#top_taskbar2_mood{
+    
+    position: relative;
+    right: 60.2rem;
 }
 
-.cta-button:hover {
-    background-color: #555;
+
+
+
+
+.top_taskbar2 {
+    display: flex;
+    gap: .2rem;
+    margin-left: 25.5rem;
 }
 
-.footerStyle {
-    text-align: center;
-    display:inline-flex;
-    text-decoration: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
+#top_taskbar2_one {
+    position: relative;
+    bottom: 1.5rem;
+}
 
-}
-.footerStyle a {
-    padding: 20px;
-    text-decoration: none;
-}
-.container2 {
-    background-color: #27034F;
+#top_taskbar2_two {
+    position: relative;
+    bottom: 1.5rem;
    
 }
-.container {
-    color: #F4E30A;
-}
 
-.footerstyle2 {
-    background-color: orange;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* bottom taskbar */
 
-.footerstyle2 a{
-    text-decoration: none;
-    color: #fff;
-}
-.container2  a {
- 
-    text-decoration: none;
-    color: #fff;
-}
-
-/* new stuff */
-.footerstyle2 {
-    display: flex;
-    justify-content: center;
-    gap: 15px; 
-    height: 90px;
-    margin-top:20px;
-}
-
-footer{
+.bottom_taskbar {
+    background-color: grey;
+    height: 1.5rem;
+    width: 29.7rem;
     position: relative;
-    top: 450px;
+    top: .5rem;
 }
-/* new stuff */
+
+#bottom_two {
+    position: relative;
+    top: 3.5rem;
+}
+
+#bottom_three {
+    background-color: grey;
+    height: 1.5rem;
+    width: 49.7rem;
+    position: relative;
+    
+}
+
+
+.inset {
+    display: flex;
+    gap: 5px;
+    padding: 3px;
+    border-top: 3px solid rgb(179, 175, 175);
+    border-style: inset;
+}
+
+.spacing {
+    width: 20rem;
+}
+
+#spacing_three {
+    width: 35rem;
+}
+
+.fa-earth-africa {
+    color: rgb(45, 39, 162);
+}
+
+.fa-file {
+    color: white;
+}
+
+
+
+.taskbar_symbol {
+    background-color: grey;
+    padding: .5px;
+    margin-top: 2px;
+    border: 3px solid rgb(179, 175, 175);
+    border-style:outset;
+}
+
+/* color palette */
+#two {
+    background-color: #ede9e6;
+    width: 30rem;
+    height: 35rem;
+    margin: 1rem;
+    grid-area: two;
+    position: relative;
+    z-index: 1;
+    border: 3px solid grey;
+    border-style: inset;
+}
+
+/* moodboard */
+#three {
+    background-color: #FBF4EF;
+    width: 50rem;
+    height: 47rem;
+    margin: 1rem;
+    grid-area: three;
+    position: relative;
+    left: 4rem;
+    bottom: 10rem;
+    z-index: 2;
+    border: 3px solid grey;
+    border-style: inset;
+
+}
+
+/* font pairs */
+#four {
+    background-color: rgb(204, 214, 121);
+    width: 30rem;
+    height: 25rem;
+    margin: 1rem;
+    grid-area: four;
+    position: relative;
+    z-index: 1;
+    border: 3px solid grey;
+    border-style: inset;
+}
+
+/* box one code */
+
+#name {
+    font-size: 3rem;
+    font-family: Julius Sans One, Georgia,
+    'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#phillip {
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.browser_title {
+    font-family: Vt323;
+    padding: 2px;
+    font-size: 1.2rem;
+    color: #f7f1f1;
+    text-shadow: 1px 1px black;
+   width:80rem;
+}
+
+/* End box one */
+
+
+/* box two */
+
+.color_blocks {
+    width: 10rem;
+    height: 10rem;
+}
+
+.color_hex{
+    font-family: Raleway, 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    
+}
+
+#block_blocks {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "block" ;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+#block1 {
+    background-color: #875c74;
+    grid-area: block1;
+    box-shadow: 2px 3px 4px rgb(41, 38, 38);
+}
+
+
+#block2 {
+    background-color: #ffc0cb;
+    grid-area: block2;
+    box-shadow: 2px 3px 4px rgb(41, 38, 38);
+}
+
+
+#block3 {
+    background-color: #fbf4ef;
+    grid-area: block3;
+    box-shadow: 2px 3px 4px rgb(41, 38, 38);
+}
+
+#block4 {
+    background-color: #110e0e;
+    grid-area: block4;
+    box-shadow: 2px 3px 4px rgb(41, 38, 38);
+}
+
+
+/* box two end */
+
+/* box three start */
+#img_container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-areas: "pic4 pic5 pic2"
+    "pic1 pic6 pic3" ;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+#img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pic1 {
+    grid-area: pic1;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+#pic2 {
+    grid-area: pic2;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+#pic3 {
+    grid-area: pic3;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+#pic4 {
+    grid-area: pic4;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+#pic5 {
+    grid-area: pic5;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+#pic6 {
+    grid-area: pic6;
+    width: 200px;
+    box-shadow: 6px 4px 8px rgb(41, 38, 38);
+}
+
+
+
+
+
+
+/* box three end */
